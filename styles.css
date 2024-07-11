@@ -3,22 +3,35 @@ body {
   color: aliceblue;
   margin: 0;
   font-family: 'Metropolis', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
+  font-size: small;
+  animation: fadeInAnimation ease 3s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .nav {
   text-align: center;
+  margin: 0;
 }
 
 .logo {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .information {
   display: flex;
   flex-direction: column;
-  margin: 0 2% 0 2%;
+  /* margin: 0 2% 0 2%; */
 }
 
 .cover {
@@ -37,6 +50,11 @@ body {
   position: absolute;
   top: 75%;
   left: 5%;
+  transition: font-size 0.3s ease;
+}
+
+.about:hover {
+  font-size: larger;
 }
 
 p {
@@ -49,22 +67,62 @@ p {
   margin: 2%;
 }
 
-.address {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.hours {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
 .footer {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  margin: 1%;
+}
+
+i {
+  color: aliceblue;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+i:hover {
+  color: rgb(255, 111, 0);
 }
 
 hr {
   color: aliceblue;
   opacity: 50%;
+  width: 98%;
+}
 
-  width: 100%;
+#brands {
+  /* img {
+    height: auto;
+    width: 20rem;
+    margin-top: 10px;
+  } */
+}
+
+.brand1 {
+  width: 300px; /* Desired width */
+  height: 200px; /* Desired height */
+  overflow: hidden;
+  position: relative;
+}
+
+.brand2 {
+  width: auto; /* Desired width */
+  height: 100px; /* Desired height */
+  overflow: hidden;
+  position: relative;
+}
+
+.brand3 {
+  width: 300px; /* Desired width */
+  height: 200px; /* Desired height */
+  overflow: hidden;
+  position: relative;
+}
+
+.brand4 {
+  width: 300px; /* Desired width */
+  height: 200px; /* Desired height */
+  overflow: hidden;
+  position: relative;
 }
