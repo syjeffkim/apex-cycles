@@ -60,7 +60,7 @@ body {
 .appointment {
   position: absolute;
   top: 77%;
-  left: 75%;
+  left: 72%;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -68,6 +68,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  overflow: hidden;
   a {
     color: inherit;
     text-decoration: none;
@@ -83,6 +84,7 @@ body {
 a {
   text-decoration: none;
 }
+
 @media screen and (max-width: 680px) {
   .about {
     font-weight: 100;
@@ -97,6 +99,27 @@ a {
   }
   .information {
     font-size: xx-small;
+  }
+  .appointment {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 1% 2%;
+    font-size: x-small;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .appointment:hover {
+    background-color: white;
+    color: black;
   }
 }
 .information {
