@@ -111,10 +111,6 @@ a {
     font-size: x-small;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
   }
 
   .appointment:hover {
@@ -122,6 +118,12 @@ a {
     color: black;
   }
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .information {
   display: flex;
   justify-content: space-around;
@@ -139,6 +141,7 @@ p {
   display: flex;
   justify-content: space-around;
   margin: 2% 0 2% 0;
+  color: inherit;
   hr {
     width: 100%;
   }
