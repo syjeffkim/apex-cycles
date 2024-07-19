@@ -43,6 +43,8 @@ body {
 }
 
 .about {
+  background-color: rgba(18, 18, 18, 0.4);
+  padding: 1%;
   font-weight: 100;
   font-size: small;
   position: absolute;
@@ -85,7 +87,7 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
   .about {
     font-weight: 100;
     font-size: x-small;
@@ -101,6 +103,8 @@ a {
     font-size: xx-small;
   }
   .appointment {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     top: 5%;
     left: 50%;
@@ -187,6 +191,7 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .brand1 {
