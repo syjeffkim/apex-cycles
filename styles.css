@@ -25,11 +25,6 @@ body {
   margin: 0;
 }
 
-.logo {
-  height: 150px;
-  width: 150px;
-}
-
 .cover {
   position: relative;
   display: flex;
@@ -79,7 +74,7 @@ body {
 
 .appointment:hover {
   background-color: white;
-  font-size: 16px;
+
   color: black;
 }
 
@@ -88,6 +83,10 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+  .logo {
+    height: 3em !important;
+    width: auto;
+  }
   .about {
     font-weight: 100;
     font-size: x-small;
@@ -120,6 +119,10 @@ a {
   .appointment:hover {
     background-color: white;
     color: black;
+  }
+
+  i {
+    font-size: 1em !important;
   }
 }
 
@@ -175,6 +178,7 @@ a {
 i {
   color: aliceblue;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: xx-large;
 }
 
 i:hover {
